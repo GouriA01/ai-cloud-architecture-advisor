@@ -1,4 +1,3 @@
-
 import boto3
 import json
 
@@ -34,4 +33,3 @@ while True:
     print("\nAnalyzing...\n")
     print(get_architecture(idea))
     print("\n" + "=" * 50 + "\n")
-
