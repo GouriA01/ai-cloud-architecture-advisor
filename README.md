@@ -29,7 +29,7 @@ pip3 install boto3
 Attach AmazonBedrockFullAccess to your EC2 role
 
 ### Step 3 — Create vi file and Run
-vi advisor.py ( Paste the code and save the file )
+sudo vi advisor.py ( Paste the code and save the file )
 python3 advisor.py
 
 ## Sample Prompts
