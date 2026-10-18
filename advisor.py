@@ -1,4 +1,6 @@
-import boto3, json
+
+import boto3
+import json
 
 bedrock = boto3.client("bedrock-runtime", region_name="us-east-1")
 
@@ -17,23 +19,19 @@ For this app idea, recommend:
 App idea: {idea}"""}]
         }]
     )
-    return response["output"]["message"]["content"]["text"]
+    return response["output"]["message"]["content"][0]["text"]
 
 print("=" * 50)
 print("  AI Cloud Architecture Advisor")
 print("=" * 50)
-print("Describe your app idea (type 'quit' to exit)
-")
+print("Describe your app idea (type 'quit' to exit)\n")
 
 while True:
     idea = input("Your app idea: ").strip()
     if idea.lower() == "quit":
         print("Goodbye!")
         break
-    print("
-Analyzing...
-")
+    print("\nAnalyzing...\n")
     print(get_architecture(idea))
-    print("
-" + "=" * 50 + "
-")
+    print("\n" + "=" * 50 + "\n")
+
