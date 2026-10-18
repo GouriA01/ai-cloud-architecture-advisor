@@ -187,7 +187,10 @@ This text diagram represents the simplified flow of how various AWS services wou
 python3 advisor.py 
 
 Your app idea: E-commerce site with payments
+
 Your app idea: Video streaming platform like Netflix
+
 Your app idea: ML model serving API
+
 Your app idea: IoT dashboard for 10K devices
 
