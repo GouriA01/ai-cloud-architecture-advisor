@@ -21,7 +21,7 @@ Built with Amazon Bedrock + Python. Just 40 lines of code.
 
 ## Setup
 
-### Step 1 — Install
+### Step 1 — Install 
 sudo yum install python3-pip -y
 pip3 install boto3
 
@@ -46,7 +46,7 @@ See [sample_output.md](sample_output.md) for full examples.
 
 ## Author
 
-Gouri Andhare — AWS Cloud Engineer | 5x AWS Certified
+Gouri Andhare — AWS Cloud Engineer
 
 ## License
 
