@@ -22,12 +22,14 @@ Built with Amazon Bedrock + Python. Just 40 lines of code.
 ## Setup
 
 ### Step 1 — Install
+sudo yum install python3-pip -y
 pip3 install boto3
 
 ### Step 2 — IAM Permission
 Attach AmazonBedrockFullAccess to your EC2 role
 
-### Step 3 — Run
+### Step 3 — Create vi file and Run
+vi advisor.py ( Paste the code and save the file )
 python3 advisor.py
 
 ## Sample Prompts
