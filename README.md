@@ -59,7 +59,7 @@ This is required before the script can call the model.
 ### Step 4 — Create the Python script
 
 ```bash
-vi advisor.py
+sudo vi advisor.py
 ```
 
 Paste the contents of `advisor.py` from this repo and save the file.
