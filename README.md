@@ -50,7 +50,7 @@ pip3 install boto3
 
 Go to IAM Console → Roles → Select your EC2 instance role → Attach the `AmazonBedrockFullAccess` policy.
 
-### Step 3 — Enable model access
+### Step 3 — Enable model access if not already enabled (Usually Access Model is already enabled)
 
 Go to the **Amazon Bedrock console** in **us-east-1** → **Model access** → Enable **Amazon Nova Micro**.
 
