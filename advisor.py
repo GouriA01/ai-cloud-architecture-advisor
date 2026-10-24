@@ -1,18 +1,19 @@
+
 import boto3
-import json
 
 bedrock = boto3.client("bedrock-runtime", region_name="us-east-1")
 
 def get_architecture(idea):
+    # Send the app idea to Amazon Bedrock and return architecture recommendation
     response = bedrock.converse(
         modelId="us.amazon.nova-micro-v1:0",
         messages=[{
             "role": "user",
             "content": [{"text": f"""You are an AWS Solutions Architect.
 For this app idea, recommend:
-1. AWS services needed and why
+1. AWS services needed and why (choose ONE service per layer, keep the design minimal, justify any tradeoffs, do not list alternatives)
 2. Architecture flow (how services connect)
-3. Estimated monthly cost
+3. Estimated monthly cost (note: these are rough estimates, not AWS Pricing Calculator figures)
 4. Architecture diagram in text format
 
 App idea: {idea}"""}]
@@ -31,5 +32,9 @@ while True:
         print("Goodbye!")
         break
     print("\nAnalyzing...\n")
-    print(get_architecture(idea))
+    try:
+        print(get_architecture(idea))
+    except Exception as e:
+        print(f"\nError: {e}\n")
     print("\n" + "=" * 50 + "\n")
+
