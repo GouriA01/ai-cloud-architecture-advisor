@@ -21,6 +21,8 @@ Built with Amazon Bedrock + Python. Just 40 lines of code.
 
 ## Setup
 
+##Note - Here we are considering the OS of ec2 as Linux.
+
 ### Step 1 — Install 
 sudo yum install python3-pip -y
 pip3 install boto3
