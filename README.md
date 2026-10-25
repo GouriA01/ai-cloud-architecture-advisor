@@ -1,5 +1,5 @@
 
-# AI Cloud Architecture Advisor
+# Project AI Cloud Architecture Advisor
 
 A beginner-friendly AI-powered tool that recommends AWS architectures for your app ideas in seconds, using Amazon Bedrock and Amazon Nova Micro.
 
